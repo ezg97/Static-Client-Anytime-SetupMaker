@@ -71,7 +71,7 @@ class PositionsPage extends React.Component{
                     <div className="section-form-inner">
                         <label htmlFor="importance">Importance:</label>
                         {/* skill SELECTION */}
-                        <select value={this.state.importance} id='importance'>
+                        <select id='importance'>
                             <option value={'Low'}>{'Low'}</option>
                             <option value={'Medium'}>{'Medium'}</option>
                             <option value={'High'}>{'High'}</option>
@@ -82,7 +82,7 @@ class PositionsPage extends React.Component{
                 <section className="section-form">
                     <div className="section-form-inner">
                         <label htmlFor="quantity">Skill:</label>
-                        <select value={this.state.importance} id='importance'>
+                        <select id='importance'>
                             <option value={'Low'}>{'Low'}</option>
                             <option value={'Medium'}>{'Medium'}</option>
                             <option value={'High'}>{'High'}</option>

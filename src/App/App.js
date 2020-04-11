@@ -17,9 +17,6 @@ import HoursPage from '../HoursPage/HoursPage';
 import SchedulePage from '../SchedulePage/SchedulePage';
 import UnknownPage from '../UnknownPage/UnknownPage';
 
-import LandingPage from '../LandingPage/LandingPage';
-
-
 class App extends Component {
   
   constructor(props){
@@ -48,8 +45,8 @@ class App extends Component {
 
                 <Route exact path='/' 
                   render={(routeProps) =>
-                      <LandingPage
-                        bool={false} 
+                      <NavBar
+                        bool={'false'} 
                       />
                   }
                 />

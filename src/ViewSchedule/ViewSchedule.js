@@ -31,22 +31,22 @@ class ViewSchedule extends React.Component{
                    
                 </Row>
                 <br />
-                <Row className='row' key={index}>
+                <Row className='row'>
                     <Col> {"Register"}</Col>
                     <Col>{"John Mac"}</Col>
                 </Row>       
 
-                 <Row className='row' key={index}>
+                 <Row className='row'>
                     <Col> {"Dinning Room"}</Col>
                     <Col>{"Colin Smith"}</Col>
                 </Row>
 
-                 <Row className='row' key={index}>
+                 <Row className='row'>
                     <Col> {"Bagging"}</Col>
                     <Col>{"Earl Thomas"}</Col>
                 </Row>
 
-                 <Row className='row' key={index}>
+                 <Row className='row'>
                     <Col> {"Order Taker 1"}</Col>
                     <Col>{"Gordon Ramsy"}</Col>
                 </Row>           

@@ -12,7 +12,7 @@ class LandingPage extends React.Component{
     render(){
         
             return(
-                <div id='landing-bg' className='page-container display'>
+                <div className='page-container display'>
                    
                     <header className='header landing-header'>
                     

@@ -3,18 +3,6 @@ import { withRouter } from 'react-router-dom';
 
 import './SchedulePage.css';
 
-
-import {InfoContext } from '../InfoContext';
-
-
-//const { employees } = require('../Employees');
-
-import config from '../config';
-
-const { hoursPM, hoursAM } = require('../Hours');
-
-
-
 class SchedulePage extends React.Component{ 
 
 
@@ -73,7 +61,7 @@ class SchedulePage extends React.Component{
                             <h3 className='shift-text'>Name:</h3>
                         </li>
                                             
-                            <li key={index} className='list-element'>
+                            <li className='list-element'>
 
                                 {/* BUTTON */}
                                     <button className={`emp-requirement-button clicked`}></button>
@@ -93,7 +81,7 @@ class SchedulePage extends React.Component{
 
                             </li>
 
-                            <li key={index} className='list-element'>
+                            <li className='list-element'>
 
                                 {/* BUTTON */}
                                     <button className={`emp-requirement-button clicked`}></button>
@@ -113,7 +101,7 @@ class SchedulePage extends React.Component{
 
                             </li>
 
-                            <li key={index} className='list-element'>
+                            <li className='list-element'>
 
                                 {/* BUTTON */}
                                     <button className={`emp-requirement-button clicked`}></button>
@@ -133,7 +121,7 @@ class SchedulePage extends React.Component{
 
                             </li>
 
-                            <li key={index} className='list-element'>
+                            <li className='list-element'>
 
                                 {/* BUTTON */}
                                     <button className={`emp-requirement-button clicked`}></button>

@@ -1,6 +1,6 @@
 {
-  "short_name": "Static Anytime SetupMaker client",
-  "name": "Static Anytime SetupMaker client",
+  "short_name": "static-setupmaker-client",
+  "name": "static-setupmaker-client",
   "icons": [
     {
       "src": "favicon.ico",
