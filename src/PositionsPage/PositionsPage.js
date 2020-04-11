@@ -43,11 +43,10 @@ class PositionsPage extends React.Component{
                         <label htmlFor="employee">Position:</label>
                         {/* Name INPUT */}
                         <select id='select-employees'>
-                            <option value="">None</option>
-                            <option value="1">John MacS</option>
-                            <option value="2">Colin Smith</option>
-                            <option value="3">Earl Thomas</option>
-                            <option value="4">Gordon Ramsy</option>
+                            <option value="">Register</option>
+                            <option value="1">Dinning Room</option>
+                            <option value="2">Bagging</option>
+                            <option value="3">Order Taker 1</option>
                         </select>
 
                     </div>

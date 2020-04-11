@@ -1,4 +1,4 @@
 # Anytime SetupMaker static client Client
 
-Live Site: [Anytime SetupMaker](https://anytime-setupmaker.now.sh)
+Live Site: [Static Anytime SetupMaker](https://static-client-anytime-setupmaker.elijahguerrero97.now.sh/)
 

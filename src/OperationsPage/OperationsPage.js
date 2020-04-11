@@ -77,6 +77,15 @@ clearClick = () => {
     render(){
 
         return(
+        <div className='page-container display'>
+                      
+            {/* Header */}
+            <header className='header' onClick={() => this.clearClick()}>
+                <h1>Donought King</h1>
+                <h2>Operations</h2>
+            </header>
+            
+            {/* List of choices */}
             <div className='operations-links'>
             <ul className="navLink">
                 <li className={this.state.employeeChildren}> 
@@ -102,6 +111,7 @@ clearClick = () => {
             </ul>
             
 
+        </div>
         </div>
         );
     }
