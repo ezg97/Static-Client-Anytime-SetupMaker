@@ -1,0 +1,132 @@
+    /* Every page: full height and will only show the scroll bar if needed */
+    .page-container{
+        height: 100%;
+        overflow: auto;
+
+        padding-bottom: 5px;
+    }    
+
+    /* Standard heading styling */
+    .header {
+        width: 100%;
+        height: 180px;
+        padding: 0;
+        margin-top: 15px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+
+        line-height: 1;
+    }
+
+    
+    
+    /* center h1 for schedule page */
+    .header h1{
+        width: 100%;
+        margin: auto 0 auto;
+    }
+
+    /* Styling made for any page that uses a CRUD operation */
+    .crud,  .header{
+        border-bottom: none;
+    }
+
+    
+
+    .crud > .header > h1 {
+        margin: 0;
+    }
+    
+    .crud .header > p{
+        margin-top:5%;
+        color: grey;
+        margin-bottom: 10px;
+    }
+
+    #mySelect{
+        max-width: 150px;
+        padding: 2px;
+        font-size: 14px;
+        margin: 20px auto;
+        border: 1px solid black;
+
+        cursor: pointer;
+    }
+
+/*-------------------------- RESPONSIVE LAYOUT --------------------------*/
+
+
+    /* ----------
+            COMPUTER SCREEN REGULAR 
+    ----------------------*/
+    @media screen and (min-width: 768px) {
+
+        .header {
+            font-size: 24px;
+
+        }
+
+
+        .crud .header > p{
+            margin-top:2%;
+            color: grey;
+        }
+       
+        #mySelect{
+            font-size: 18px;  
+        }
+
+    }
+
+      /* ---------------------- 
+            COMPUTER SCREEN LARGE 
+      ----------------------*/
+    @media screen and (min-width: 1024px) {
+
+        .header {
+            font-size: 28px;
+        }
+
+        .crud, .header{
+            padding-top: 30px;
+        }
+
+        .crud > .header > h1 {
+            margin: auto 0 auto;
+        }
+
+        .crud .header > p{
+            margin-top:1%;
+            color: grey;
+            width: 80%;
+        }
+
+        .section-form-inner {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+
+        }
+
+        #mySelect{
+            font-size: 22px;  
+        }
+
+    }
+
+    
+    @media screen and (min-width: 2000px) {
+        .crud, .header{
+            padding-top: 50px;
+        }
+        #mySelect{
+            font-size: 26px;  
+        }
+
+    }
+  
+

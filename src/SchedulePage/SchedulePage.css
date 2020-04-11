@@ -1,0 +1,223 @@
+
+.display-list-positions{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    border-bottom: 1px solid grey;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+
+}
+
+.list-style{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.display-list-employees{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    flex-wrap: wrap;
+}
+
+.list-element{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    padding: 5px;
+    /* separation between buttons */
+    margin-left: 30px;
+}
+
+.pos-requirement-button{
+    height: 14px;
+    width: 14px;
+
+    border-radius: 50%;
+
+    border: 1px solid black;
+    background-color: white;
+
+    /* separation between the button and text */
+    margin-right: 5px;
+
+    cursor: pointer;
+
+}
+
+.emp-requirement-button{
+    height: 14px;
+    width: 14px;
+
+    border-radius: 50%;
+
+    border: 1px solid black;
+    background-color: white;
+
+    /* separation between the button and text */
+    margin-right: 5px;
+
+    cursor: pointer;
+}
+
+.emp-requirement-button:hover, .emp-requirement-button:focus,
+.pos-requirement-button:hover, .pos-requirement-button:focus{
+    background-color: grey;
+}
+
+
+
+.clicked{
+    background-color: lime;
+}
+
+.scheduler-hours{
+    padding: 5px;
+    font-size: 14px;
+
+    border: 1px solid grey;
+
+    cursor: pointer;
+
+}
+
+.scheduler-hours:hover, .scheduler-hours:focus{
+    background: grey;
+}
+
+.emp-name{
+    min-width: 80px;
+
+    padding: 5px;
+    font-size: 18px;
+    border: 1px solid black;
+    background-color: rgb(240,240,240);
+}
+
+.text-style{
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+.shift-text:nth-child(1){
+    text-align: center;
+    width: 60%;
+    padding-left: 40px;
+
+}
+.shift-text:nth-child(2){
+    width: 40%;
+    text-align: start;
+    padding-left: 10px;
+
+}
+
+
+.message{
+    padding-bottom: 10px;
+}
+
+ .scheduler-hours, .list-style .emp-name {
+    min-height: 70px;
+    font-size: 90%;
+    text-align: center;
+    
+}
+
+.emp-name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*---------------- RESPONSIVE LAYOUT ----------------*/
+
+    @media screen and (min-width: 375px) {
+        
+        .display-list-positions{
+            padding-top: 0px;
+        }
+    }
+    /* ----------
+            COMPUTER SCREEN REGULAR 
+    ----------------------*/
+    @media screen and (min-width: 768px) {
+        .display-list-positions{
+            font-size: 22px;
+        }
+
+        .scheduler-hours{
+            font-size: 20px;
+            min-width: 120px;
+        }
+
+        .emp-name{
+            min-width: 180px;
+            padding: 5px;
+        
+            font-size: 22px;
+            font-weight: bolder;
+        
+        }
+        
+    }
+      /* ---------------------- 
+            COMPUTER SCREEN LARGE 
+      ----------------------*/
+    @media screen and (min-width: 1024px) {
+        .display-list-positions{
+            padding-top: 40px;
+            font-size: 30px;
+    
+        }
+
+        .scheduler-hours{
+            font-size: 25px;
+            min-width: 120px;
+        }
+
+        .emp-name{
+            min-width: 380px;
+            padding: 5px;
+            /* not sure why I need important here, I'll figure it out eventually */
+            font-size: 25px !important;
+            font-weight: bolder;
+        
+        }
+
+        .shift-text:nth-child(1){
+            text-align: center;
+            width: 60%;
+            padding-right: 80px;
+
+        }
+        .shift-text:nth-child(2){
+            width: 40%;
+            text-align: center;
+            padding-right: 130px;
+        
+        }
+
+        
+    }
+  

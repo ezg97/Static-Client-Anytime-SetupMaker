@@ -1,0 +1,187 @@
+.back{
+    /* margin top so that the div is UNDER the nav bar */
+    margin-top: 50px; 
+    height: 45px;
+    
+    /* margin-bottom: 35px; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+
+.back-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 40px;
+    width: 26px;
+
+    color: white;
+    background-color: #383e42; 
+
+    font-weight: bold;
+    font-size: 22px; 
+}
+
+.back-button:focus, .back-button:hover{
+    color: grey;
+    cursor: pointer;
+}
+
+
+.section-select{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.section-select-inner {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.section-select-inner > #select-employees{
+    margin-top: 25px;
+    font-size: 14px;
+
+    width: 100%;
+    border: 1px solid black;
+    max-width: 150px;
+    padding: 2px;
+}
+
+/*
+    FORM
+*/
+.employee-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+    margin-top: 25px;
+    line-height: 2;
+}
+
+.employee-form section{
+    background-color: rgb(240,240,240);
+
+}
+
+.section-form label{
+    margin-right: 2%;
+    font-weight: bold;
+}
+
+.submit{
+    margin-top: 20px;
+    border: 1px solid grey;
+    background: #383e42;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 10px;
+
+    width: 200px;
+    padding: 5px;
+
+    cursor:pointer;
+}
+
+.submit:focus, .submit:hover{
+    color: grey;
+}
+
+   /*---------------- RESPONSIVE LAYOUT ----------------*/
+
+ /* ----------
+            COMPUTER SCREEN height  
+    ----------------------*/
+    /* @media screen and (min-height: 700px) {
+      
+        .back{
+            margin-top: 5%;
+        }
+  
+    } */
+    
+    /* ----------
+            COMPUTER SCREEN REGULAR 
+    ----------------------*/
+    @media screen and (min-width: 768px) {
+      
+        .back{
+            height: 60px;
+            margin-top: 60px;
+        }
+        
+        .back-button{
+            height: 50px;
+            width: 30px;
+            /* for some reason "align-items" isn't working so it's not vertically centered so this is a correction for that*/
+            padding-bottom: 4px;
+
+            color: white;
+            background-color: #383e42; 
+        
+            font-weight: bold;
+            font-size: 24px; 
+        }
+
+        .section-select-inner > #select-employees{
+            width: 100%;
+            max-width: 250px;
+            font-size: 20px;
+        }
+      
+        #select-employees{
+            font-size: 18px;
+        }
+  
+    }
+      /* ---------------------- 
+            COMPUTER SCREEN LARGE 
+      ----------------------*/
+    @media screen and (min-width: 1024px) {
+        
+        .back{
+            display: none
+        }
+
+        .section-select{
+            width: 100%;
+            font-size: 30px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center !important;
+            align-items: center;
+        
+            margin-bottom: 20px;
+        }
+
+        .section-select-inner{
+            width: 90%;
+        }
+
+        .section-select-inner > #select-employees{
+            width: 65%;
+            max-width: 330px;
+            margin-left: 120px;
+
+        }
+
+        #select-employees{
+            font-size: 22px;
+        }        
+      
+    }
+  

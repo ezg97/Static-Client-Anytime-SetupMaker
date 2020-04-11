@@ -1,0 +1,33 @@
+#select-day{
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.labor-form section{
+    background-color: rgb(240,240,240);
+
+}
+
+
+
+/*---------------- RESPONSIVE LAYOUT ----------------*/
+
+
+    /* ----------
+            COMPUTER SCREEN REGULAR 
+    ----------------------*/
+    @media screen and (min-width: 768px) {
+
+        #select-day{
+            font-size: 18px;
+
+        }
+  
+    }
+      /* ---------------------- 
+            COMPUTER SCREEN LARGE 
+      ----------------------*/
+    @media screen and (min-width: 1024px) {
+      
+    }
+  
